@@ -73,3 +73,53 @@
 // var fraseDois = 'Eu quero a última palavra teste dessa frase de teste'
 // console.log(fraseDois.indexOf('teste'));
 // console.log(fraseDois.lastIndexOf('teste'));
+
+// AULA 30 e 31 - FUNÇÕES DE ARRAY
+
+// push - Adiciona um elemento ao final do array (arr.push())
+// pop - Remove o elemento no final do array (arr.pop())
+// unshift - Adiciona um elemento no inicio do array (arr.unshift())
+// shift - Remove um elemento no inicio do array (arr.shift())
+// acessar o último elemento - (arr[arr.length - 1])
+// isArray - Confere se o tipo de dado é um array - Array.isArray(arr)
+// splice - Adiciona um elemento no meio do array (arr.splice(indice em que vai add,qts elementos vai remover,qual valor vai add))
+// indexOf - Localiza o indice do elemento que deseja - arr.indexOf(index)
+// join - Transforma um array em uma string - arr.join(',') A vrigula é usada como separador
+// reverse - Inverte as posições dos elementos no array - arr.reverse()
+
+// AULA 32 - CRIANDO OBJETOS COM MÉTODOS
+
+// let pessoa = {
+//     nome: 'Otávio',
+//     idade: 27,
+//     falar: function(){
+//         console.log('Olá, tudo bem?');
+//     },
+//     soma: function (a,b) {
+//         return a + b
+//     }
+//}
+// console.log(pessoa.nome);
+// pessoa.falar()
+// var soma = pessoa.soma(2, 2)
+// console.log(soma);
+
+// AULA 33 - UTILIZANDO O THIS
+
+// let pessoa = {
+//     nome: 'Otávio',
+//     idade: 27,
+//     falar: function(){
+//         console.log('Olá, tudo bem?');
+//     },
+//     dizerNome: function() {
+//         console.log('O meu nome é' + this.nome);
+//     }
+//     aniversario: function() {
+//         this.idade+=1
+//     }
+// }
+// pessoa.dizerNome()
+// pessoa.aniversario()
+
+// AULA 34 - DOM(DOCUMENT OBJECT MODEL) - Interface de programação para HTML
