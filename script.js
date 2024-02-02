@@ -122,4 +122,32 @@
 // pessoa.dizerNome()
 // pessoa.aniversario()
 
-// AULA 34 - DOM(DOCUMENT OBJECT MODEL) - Interface de programação para HTML
+// AULA 34 e 35 - DOM(DOCUMENT OBJECT MODEL) - Interface de programação para HTML
+
+//TAGS
+// let titulo = document.getElementsByTagName('h1')[0]
+// let lis = document.getElementsByTagName('li')
+
+// //ID
+// let pragrafo = document.getElementById('paragrafo')
+
+// //CLASS
+// let itensDaLista = document.getElementsByClassName('item')
+
+// AULA 36 - querySelector e querySelectorAll 
+// let itensClasse = document.getElementsByClassName('item')
+// let itensQuery = document.querySelectorAll('#lista2 li')  // querySelectorAll (# acessa ID) (TAG não precisa de nada)
+// let itensQuery2 = document.querySelectorAll('#lista .item') // querySelectorAll (. acessa CLASS) (TAG não precisa de nada)
+
+// let lista = document.querySelector('#lista') // querySelector
+// let primeiraLista = document.querySelector('ul') // querySelector
+// let span = document.querySelector('#paragrafo span') // querySelector
+
+// AULA 37 - ALTERAR CONTEÚDO DO ELEMENTO (textContent e innerHTML),
+
+// let title = document.querySelector('#tittle') // selecionar elemento
+// title.innerHTML = 'Testando o texto alterado!' // innerHTML
+// let subtitle = document.querySelector('.subtitle') // textContent - mais utilizado e recomendado
+// subtitle.textContent = 'Testando o textContent'
+
+// AULA 38 -
