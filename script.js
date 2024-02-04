@@ -150,4 +150,53 @@
 // let subtitle = document.querySelector('.subtitle') // textContent - mais utilizado e recomendado
 // subtitle.textContent = 'Testando o textContent'
 
-// AULA 38 -
+// AULA 38 - CRIANDO ELEMENTOS DOM (createElement)
+
+// var novoParagrafo = document.createElement('p')
+// var texto = document.createTextNode('Texto do paragráfo')
+// novoParagrafo.appendChild(texto)                           // Inserindo elemento no body
+// console.log(novoParagrafo);
+
+// var body = document.querySelector('body')
+// body.appendChild(novoParagrafo)
+
+// var container = document.getElementById('container')
+// var el = document.createElement('span')                     // Inserindo elemento em um container
+// el.appendChild(document.createTextNode('texto do span'))
+// container.appendChild(el)
+
+// AULA 39 - REMOVENDO ELEMENTOS (removeChild)
+
+// var container = document.querySelector('#container')
+// var p = document.querySelector('#container p')
+// container.removeChild(p)
+
+// // Remover o elemento
+// var subtitle = document.querySelector('.subtitle')
+// subtitle.remove()
+
+// AULA 40 - INSERINDO ELEMENTOS (appendChild e insertBefore)
+
+// var el = document.createElement('div')
+// el.classList = 'div-criada'
+// var container = document.querySelector('#container')
+
+// container.appendChild('el') // inserindo elemento filho
+
+// var el2 = document.createElement('div')
+// el2.classList = 'div-before' // insertBefore - Insere Antes
+// var el3 = document.querySelector('#container .div-criada')
+// container.insertBefore(el2, el3)
+
+// AULA 41 - TROCANDO ELEMENTOS (replaceChild)
+
+// var el = document.createElement('h3')
+// el.classList = 'testando-classe'
+// var texto = document.createTextNode('Este é o texto do h3')
+// el.appendChild(texto)
+
+// var title = document.querySelector('#title') // Selecionar o elemento que quero trocar
+
+// var pai = title.parentNode // Selecionar o pai do el
+
+// pai.replaceChild(el, title) // Trocar os elemento (o que vai substituir, o que vai ser substituido)
