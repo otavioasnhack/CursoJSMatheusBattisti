@@ -200,3 +200,62 @@
 // var pai = title.parentNode // Selecionar o pai do el
 
 // pai.replaceChild(el, title) // Trocar os elemento (o que vai substituir, o que vai ser substituido)
+
+// AULA 42 - ADICIONANDO ATRIBUTOS (setAttribute)
+
+// var title = document.querySelector('#title')
+// title.setAttribute('class','testando-atributo')    // (primeiro - adiciona o parametro(classe,id,etc), segundo - o valor p/ parametro)
+// var btn = document.querySelector('#btn')
+// btn.setAttribute('disabled','disabled')
+// var subtitle = document.querySelector('.subtitle')
+// subtitle.setAttribute('id','titulo-2')
+
+// var lista = document.querySelector('#lista')
+// lista.removeAttribute('id')   // Removendo atributo (removeAttribute)
+
+// AULA 43 - ADICIONANDO(ALTERANDO) CSS PELO DOM
+
+// var title = document.querySelector('#title') // Seleciona o elemento(querySelector)
+// title.style.color = 'red' // Adiciona o estilo(manipula o CSS)
+// title.style.backgroundColor = 'yellow'
+
+// Adicionar vários elementos de uma vez
+// subtitle.style.cssText = 'color: blue; background-color: pink; font-size: 50px'
+
+// AULA 44 - PROPRIEDADES DE DOCUMENT
+// console.log(document.body);
+// console.log(document.head);
+// console.log(document.URL); // URL da página atual
+// console.log(document.title);
+// document.title = 'Aula 42' // Alterando o valor do title atraves das propriedades DOM
+
+// AULA 45 - CALLBACK FUNCTIONS
+// function exibir(num) {
+//     console.log('A operação resultou em: ' + num);
+// } 
+
+// function soma(a, b, callback) {
+//     var op = a * b
+//     callback(op)
+// }
+
+// function multiplicacao(a, b, cb) {
+//     var op = a * b
+//     cb(op)
+// }
+// soma(2, 2, exibir)
+// multiplicacao(2, 4, exibir)
+
+// AULA 46 - SETTIMEOUT E SETINTERVAL
+
+// console.log('Antes do setTimeout');
+// setTimeout(function () {
+//     console.log('Testando o setTimeout');
+// }, 2000) // Tempo em milisegundos
+// console.log('Depois do setTimeout');
+
+//  setInterval(function () {
+//     console.log('Testando o setInterval');
+//  }, 1000) // Tempo em milisegundos
+
+// AULA 47 - CLEARTIMEOUT E CLEARINTERVAL
