@@ -259,3 +259,72 @@
 //  }, 1000) // Tempo em milisegundos
 
 // AULA 47 - CLEARTIMEOUT E CLEARINTERVAL
+// var x = 0
+// var myTimer = setTimeout(function() {
+//     console.log('O x é 0')
+// }, 1500)
+//                                         // clearTimeout na prática
+// x = 5
+// if (x > 0) {
+//     clearTimeout(myTimer)
+//     console.log('O x passou de 0');
+// }
+
+// var myInterval = setInterval(function(){
+//     console.log('Imprimindo interval')
+// }, 500)
+//                                                // clearInterval na prática
+// setTimeout(function(){
+//     console.log('Não precisamos mais repetir')
+//     clearInterval(myInterval)
+// }, 1500)
+
+// AULA 48 - EVENTOS E ONLOAD
+// window.onload(function() {
+//     console.log('Carregou o DOM');
+// })
+
+// AULA 49 - EVENTOS CLICK E DBLCLICK DO DOM
+
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function() {
+//     console.log('clicou');
+// })
+
+// let title = document.querySelector('#title')
+// title.addEventListener('click', function() {   // click afetando outros elementos
+//     console.log('teste');
+//     this.style.color = 'red'
+// })
+
+// let subtitle = document.querySelector('.subtitle')
+// subtitle.addEventListener('dblclick', function () {   // click duplo
+//     console.log('click duplo');
+// })
+
+// AULA 50 - EVENTOS MOUSEOVER E MOUSEOUT
+
+// let title = document.querySelector('#title')
+// title.addEventListener('mouseover',function() { // Add o evento que qnd passar o mouse, vai realizar a ação.
+//     this.style.backgroundColor = 'yellow'  // A ação é o title ficar com a cor de fundo amarela quando for passado o mouse
+// })
+
+// title.addEventListener('mouseout', function () { // Add o evento que qnd retira o mouse, vai realizar a ação.
+//     this.style.backgroundColor = 'white' // A ação é o title ficar com a cor de fundo branca, após retirar o mouse.
+// })
+
+// let criandoTag = document.createElement('p')
+// criandoTag.classList = 'hide'
+// let addTextoTag = document.createTextNode('Contém algum texto!')
+// criandoTag.appendChild(addTextoTag)
+
+// let subtitle = document.querySelector('.subtitle')
+// subtitle.addEventListener('mouseover', function () { // Quando passar o mouse, vai remover o texto criado.
+//     let legenda = document.querySelector('#legenda')
+//     legenda.classList.remove('hide')
+// })
+
+// subtitle.addEventListener('mouseout', function () {
+//     let legenda = document.querySelector('#legenda') // Quando retirar o mouse, vai add novamente o texto criado.
+//     legenda.classList.add('hide')
+// })
