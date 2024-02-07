@@ -328,3 +328,17 @@
 //     let legenda = document.querySelector('#legenda') // Quando retirar o mouse, vai add novamente o texto criado.
 //     legenda.classList.add('hide')
 // })
+
+// AULA 51 - EVENTOS KEYDOWN E KEYUP
+// document.addEventListener('keydown', function (event) {
+//     if (event.key === 'Enter') {  // keydown é ativado quando uma tecla é pressionada.
+//         console.log('Apertou Enter');
+//     }
+// })
+// document.addEventListener('keyup', function (e) {
+//     if (e.key === 'Enter') { // keyup é ativado quando a tecla pressionada volta ao posição normal
+//         console.log('Soltou o Enter');
+//     }
+// })
+
+// AULA 52 - CRIANDO O PROJETO DO CURSO
